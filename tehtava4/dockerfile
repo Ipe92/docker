@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+
+COPY skripti.sh .
+RUN apt-get update && apt-get install -y curl
+RUN skripti.sh
